@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Visualise Your Dream Wedding Look</h1>
+            <p>Explore timeless wedding styles inspired by culture and beauty.</p>
+        </div>
+
+        <div class="prompt-section">
+            <div class="input-section">
+                <label for="prompt">Your wedding style, in your own words</label>
+                <textarea name="" id="prompt" class="input-space"
+                    placeholder="A Yoruba bride wearing aso-oke, coral beads, gold embroidery and a matching gele"
+                ></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="count">Number of Images</label>
+                    <select name="" id="count" class="control-input">
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Images</option>
+                        <option value="4">4 Images</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="generateBtn" class="generate-btn">
+                <span class="loading-spinner"></span>
+                <span class="btn-text">Generate Image</span>
+            </button>
+
+        </div>
+
+        <div class="result-section">
+            <div class="result-header">
+                <h2>Your Wedding Vision</h2>
+            </div>
+
+            <div id="results">
+                <div class="placeholder">
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                    </svg>
+                    <p>Your inspired bridal looks will be displayed here.</p>
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem;">Enter a prompt above and click "Generate Images" to get started</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
